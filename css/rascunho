@@ -1,0 +1,21 @@
+/*linha do meio*/
+  .timeline li:nth-child(even):not(:last-child)::after {
+        content: "";
+        position: absolute;
+        height: calc(100% + 30px);
+        width: 2px;
+        background-color: #aaa;
+        top: 0;
+        left: -31px;
+    }
+    /*bolinha*/
+    .timeline li::before {
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: white;
+        top: 0;
+        z-index: 1;
+    }
